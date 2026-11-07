@@ -13,13 +13,29 @@
     <section class="login-card">
       <div class="logo">P</div>
 
-      <h1>Iniciar sesión</h1>
+
+      <h1 id="login-title">Iniciar sesión</h1>
+
       <p class="subtitle">
-        Bienvenido a ProyPrueba. Ingresa tus datos
-        para continuar.
+        Bienvenido a ProyPrueba. Ingresa tus credenciales
+        para acceder al formulario de demostración.
       </p>
 
-      <form id="loginForm" novalidate>
+      <p class="help-text" id="login-help">
+        Todos los campos son obligatorios.
+        Utiliza un correo válido y una contraseña
+        de al menos 8 caracteres.
+      </p>
+
+
+      
+        <form
+          id="loginForm"
+          aria-labelledby="login-title"
+          aria-describedby="login-help"
+          novalidate
+        >
+
         <div class="form-group">
           <label for="email">Correo electrónico</label>
           <input
@@ -58,7 +74,7 @@
         <button type="submit" class="login-button">
           Ingresar
         </button>
-      </form>
+      </>
 
       <p class="demo-info">
         Proyecto académico - Laboratorio GitHub
